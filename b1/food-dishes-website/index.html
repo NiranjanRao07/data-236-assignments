@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Dishes</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+      header {
+        background-color: #ff6347;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+      }
+      header h1 {
+        font-size: 48px;
+        margin-bottom: 10px;
+      }
+      header p {
+        font-size: 24px;
+      }
+      nav {
+        background-color: #333;
+        overflow: hidden;
+      }
+      nav a {
+        color: white;
+        float: left;
+        display: block;
+        padding: 14px 20px;
+        text-align: center;
+        text-decoration: none;
+      }
+      nav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      main {
+        padding: 25px 20px;
+        text-align: center;
+      }
+      .category {
+        margin: 30px 0;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+      }
+      .category div {
+        background-color: white;
+        padding: 20px;
+        width: 200px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+      .category div:hover {
+        transform: translateY(-10px);
+      }
+      .category img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+      .category div h3 {
+        margin-top: 10px;
+        font-size: 20px;
+        color: #333;
+      }
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 15px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Our Food Dishes</h1>
+      <p>Explore a variety of dishes from different categories</p>
+    </header>
+
+    <nav>
+      <a href="meat.html">Meat</a>
+      <a href="seafood.html">Seafood</a>
+      <a href="vegetable.html">Vegetable</a>
+      <a href="bread-rice.html">Bread/Rice</a>
+      <a href="soup.html">Soup</a>
+      <a href="drink.html">Drink</a>
+      <a href="dessert.html">Dessert</a>
+    </nav>
+
+    <main>
+      <h2>Discover Our Categories</h2>
+      <div class="category">
+        <div>
+          <img src="images/meat-dish.jpg" alt="Meat Dishes" />
+          <h3>Meat</h3>
+        </div>
+        <div>
+          <img src="images/seafood-dish.jpg" alt="Seafood Dishes" />
+          <h3>Seafood</h3>
+        </div>
+        <div>
+          <img src="images/vegetable-dish.jpeg" alt="Vegetable Dishes" />
+          <h3>Vegetable</h3>
+        </div>
+        <div>
+          <img src="images/bread-rice.jpg" alt="Bread/Rice Dishes" />
+          <h3>Bread/Rice</h3>
+        </div>
+        <div>
+          <img src="images/soup-dish.jpg" alt="Soup Dishes" />
+          <h3>Soup</h3>
+        </div>
+        <div>
+          <img src="images/drink-dish.jpg" alt="Drink Dishes" />
+          <h3>Drink</h3>
+        </div>
+        <div>
+          <img src="images/dessert-dish.jpg" alt="Dessert Dishes" />
+          <h3>Dessert</h3>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Food Dishes Website</p>
+    </footer>
+  </body>
+</html>

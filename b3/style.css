@@ -1,0 +1,146 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ff6347;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+nav {
+  background-color: #333;
+}
+
+nav a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  margin: 0 10px; /* Ensures space between menu items */
+}
+
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+main {
+  padding: 25px 20px;
+}
+
+/* Home page layout fix - center categories */
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the items */
+  margin-top: 30px;
+}
+
+.category-item {
+  width: 200px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.category-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.category-item h3 {
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+.category-item:hover {
+  transform: translateY(-10px);
+}
+
+/* Subpage layout fix - image on left, content on right */
+.category-page {
+  display: flex;
+  flex-direction: row; /* Ensures the content is side-by-side */
+  justify-content: center; /* Center both image and content */
+  align-items: center; /* Vertically center content and image */
+  margin-top: 30px;
+  padding: 20px;
+}
+
+/* Image styling */
+.category-page .theme-image {
+  width: 100%; /* Adjust to full width for mobile responsiveness */
+  height: auto;
+  max-width: 300px; /* Keep max-width for image size */
+  object-fit: cover;
+  border-radius: 10px;
+  border: 4px solid #333; /* Border added to the image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Content styling */
+.category-page .content {
+  max-width: 600px; /* Increase content width */
+  text-align: center; /* Center content */
+  margin-left: 20px;
+}
+
+.category-page .content h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.category-page .content p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.category-page .content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.category-page .content li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 20px;
+}
+
+/* Page hit counter */
+#page-hit-counter {
+  font-weight: bold;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  /* Adjust layout for smaller screens */
+  .category-page {
+    flex-direction: column; /* Stack the image and content vertically */
+    align-items: center;
+  }
+
+  .category-page .theme-image {
+    max-width: 100%; /* Image should take full width on mobile */
+    height: auto;
+  }
+
+  .category-page .content {
+    text-align: left; /* Left-align content on smaller screens */
+  }
+}

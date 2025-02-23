@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Dishes</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Add Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Our Food Dishes</h1>
+      <p>Explore a variety of dishes from different categories</p>
+    </header>
+
+    <!-- Navigation bar with dropdown for categories -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Food Dishes</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-category="home">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="meatDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Meat
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="meatDropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-category="meat"
+                    data-subcategory="beef"
+                    >Beef</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-category="meat"
+                    data-subcategory="pork"
+                    >Pork</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-category="meat"
+                    data-subcategory="lamb"
+                    >Lamb</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-category="meat"
+                    data-subcategory="poultry"
+                    >Poultry</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="seafoodDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Seafood
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="seafoodDropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-category="seafood"
+                    data-subcategory="fish"
+                    >Fish</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-category="seafood"
+                    data-subcategory="shrimp"
+                    >Shrimp</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-category="seafood"
+                    data-subcategory="crab"
+                    >Crab</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-category="seafood"
+                    data-subcategory="shellfish"
+                    >Shellfish</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="vegetableDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Vegetable
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="vegetableDropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-category="vegetable"
+                    data-subcategory="salad"
+                    >Salad</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-category="vegetable"
+                    data-subcategory="cooked"
+                    >Cooked</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="breadRiceDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Bread/Rice
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="breadRiceDropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-category="bread-rice"
+                    data-subcategory="bread"
+                    >Bread</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-category="bread-rice"
+                    data-subcategory="rice"
+                    >Rice</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-category="bread-rice"
+                    data-subcategory="noodle"
+                    >Noodle</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-category="bread-rice"
+                    data-subcategory="potato"
+                    >Potato</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-category="soup">Soup</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="drinkDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Drink
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="drinkDropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-category="drink"
+                    data-subcategory="alcohol"
+                    >Alcohol</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-category="drink"
+                    data-subcategory="wine"
+                    >Wine</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-category="drink"
+                    data-subcategory="soft-drink"
+                    >Soft Drink</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="dessertDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dessert
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dessertDropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-category="dessert"
+                    data-subcategory="cheese"
+                    >Cheese</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-category="dessert"
+                    data-subcategory="cookie"
+                    >Cookie</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-category="dessert"
+                    data-subcategory="cake"
+                    >Cake</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-category="dessert"
+                    data-subcategory="ice-cream"
+                    >Ice Cream</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-category="dessert"
+                    data-subcategory="fruit"
+                    >Fruit</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main id="content-container"></main>
+
+    <footer>
+      <p>Food Dishes Website</p>
+      <p>Page visits: <span id="page-hit-counter">Loading...</span></p>
+    </footer>
+
+    <!-- Add Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
